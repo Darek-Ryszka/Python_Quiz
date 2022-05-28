@@ -19,8 +19,14 @@ def new_game():
     display_score(correct_guesses, guesses)
 
 
-def check_answer():
-    pass
+def check_answer(answer, guess):
+
+    if answer == guess:
+        print("CORRECT!")
+        return 1
+    else:
+        print("WRONG!")
+        return 0
 
 
 def display_score():
