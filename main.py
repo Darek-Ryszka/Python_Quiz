@@ -49,7 +49,13 @@ def display_score(correct_guesses, guesses):
 
 
 def play_again():
-    pass
+    response = input("Do you want to play again? (yes or no): ")
+    response = response.upper()
+
+    if response == "YES":
+        return True
+    else:
+        return False
 
 
 questions = {
@@ -65,3 +71,8 @@ options = [["A. Guido van Rossum", "B. Elon Musk", "C. Bill Gates", "D. Mark Zuc
            ["A. True", "B. False", "C. sometimes", "D. What's Earth?"]]
 
 new_game()
+
+while play_again():
+    new_game()
+
+print("See you next time :)")
