@@ -2,7 +2,7 @@
 Python Quiz Game
 
 ## General info
-This project is simple Quiz Game
+This project is a simple Quiz Game
 
 ## Technologies
 * Pytohon version: 3.8
